@@ -7,11 +7,70 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    
+    <div class="header">
+        <img class="logo" src="assets/logo revoU.png" alt="logo">
+        <div class="navbar">
+            <ul class="nav-items">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#our-profile">Our Profile</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="#message">Message Us</a></li>
+            </ul>
+        </div>
+    </div>
 
+    <div class="container">
+        <div class="content" id="home">
+            <h1>Hai <span id="yourName">Dani</span>, Welcome to my Website!</h1>
+            <p>Ini adalah latihan website pertama</p>
+        </div>
+    </div>
 
+    <div class="headquater" id="our-profile">
+        <h4>Our Headquarter</h4>
+        <div class="head-items">
+            <div class="circle-items">
+                <div class="circle"><img src="assets/Jakarta.jpeg" alt="Jakarta"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="circle-items">
+                <div class="circle"><img src="assets/Bandung.jpeg" alt="Bandung"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="circle-items">
+                <div class="circle"><img src="assets/Surabaya.jpeg" alt="Surabaya"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </div>
 
+    <div class="message" id="message">
+        <div class="form-left">
+            <h4 class="title-message">Message Us</h4>
+            <form action="#">
+                <label for="nama">Nama: </label>
+                <input type="text" placeholder="Masukkan Nama Anda" id="nama" >
 
+                <label for="Tanggal">Tanggal Lahir: </label>
+                <input type="date" id="date" >
+
+                <label for="jenis_kelamin" id="jenisKelamin">Jenis Kelamin: </label>
+                <p><input type='radio' name='jenis_kelamin' value='pria'/>Pria</p>
+                <p><input type='radio' name='jenis_kelamin' value='perempuan' r/>Perempuan</p>
+
+                <label for="pesan">Pesan: </label>
+                <textarea name="pesan" id="pesan" cols="30" rows="5" placeholder="Masukkan Pesan Anda" style="background-color: #BFEBE5;"></textarea>
+                <button class="btn" type="submit" onclick="submitMessage()">Submit</button>
+            </form>
+        </div>
+        <div class="form-right">
+            <textarea class="hasil" name="hasil" id="hasil" cols="75" rows="20" readonly ></textarea>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>Created By Dani</p>
+    </footer>
     <script src="js/script.js"></script>
 </body>
 </html>
